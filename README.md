@@ -1,2 +1,2 @@
-# keike_corp
-Udemy course (from zero to senior) 
+# keiko-corp
+The greatest company ever created by Bruno
