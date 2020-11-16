@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!--link rel="stylesheet" type="text/css" href="css/bootstrap.css" /-->
     <link rel="stylesheet" type="text/css" href="css/owl.transitions.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
@@ -30,26 +30,22 @@
                 <ul class="list-unstyled">
                     <li class="animated wow fadeInLeft" data-wow-delay="0s"><a href="#about">About</a></li>
                     <li class="animated wow fadeInLeft" data-wow-delay=".1s"><a href="#app_features">Features</a></li>
-                    <li class="animated wow fadeInLeft" data-wow-delay=".2s"><a href="#testimonials">Testimonials</a></li>
-                </ul>
-            </nav>
+                    <li class="animated wow fadeInLeft" data-wow-delay=".2s"><a href="#testimonials">Testimonials</a></ <!-- App Features Section -->
+                        <section class="app_features" id="app_features">
+                            <div class="container">
 
-            <div class="social pull-right">
-                <ul class="list-unstyled">
-                    <li class="animated wow fadeInRight" data-wow-delay=".2s">
-                        <a href="#"><img src="img/facebook.png" alt="" title=""></a>
-                    </li>
-                    <li class="animated wow fadeInRight" data-wow-delay=".1s">
-                        <a href="#"><img src="img/twitter.png" alt="" title=""></a>
-                    </li>
-                    <li class="animated wow fadeInRight" data-wow-delay="0s">
-                        <a href="#"><img src="img/google.png" alt="" title=""></a>
-                    </li>
-                </ul>
-            </div>
+                                <div class="row text-center">
+                                    <div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay="0s">
+                                        <img src="img/f_icon1.png" alt="" title="">
+                                        <h1 class="text-uppercase">malesuada fames turpis.</h1>
+                                        <p class="text-lowercase">vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+                                    </div>
+                                    <div class="col-sm-4 col-md-4 details animated wow fadeInDown" data-wow-delay=".1s">
+                                        <img src="img/f_icon2.png" alt="" title="">
+                                    </div>
 
-            <span class="burger_icon">menu</span>
-        </div>
+                                    <span class="burger_icon">menu</span>
+                                </div>
     </header>
     <!--  End Header Section  -->
 
@@ -297,6 +293,24 @@
     <!--  End Footer Section  -->
 
     <!--  Scripts -->
+
+    <script>
+        const LoadStyleSheet = (src) => {
+            if (document.createStyleSheet) {
+                document.createStyleSheet(src)
+            } else {
+                const stylesheet = document.createElement('link');
+                stylesheet.href = src;
+                stylesheet.rel = 'stylesheet';
+                stylesheet.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(stylesheet);
+
+            }
+        }
+        window.onload = function() {
+            LoadStyleSheet('css/bootstrap.css');
+        }
+    </script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/ajaxchimp.js"></script>
 
